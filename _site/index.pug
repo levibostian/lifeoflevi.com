@@ -1,0 +1,45 @@
+doctype html
+html(lang='en')
+    head
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        title Levi Bostian | Building the next great app.
+        link(rel='stylesheet', href='https://unpkg.com/tachyons@4.6.1/css/tachyons.min.css')
+        include google_analytics.pug
+    body.black-70
+        #about.w-100.w-70-ns.bg-white.tc.flex.flex-row-ns.flex-column.justify-center.center.pt4
+            h1.f1-ns.f2.tc.tr-ns.pt5.dib-ns.ph2(style="transform:rotate(-3deg);") Hello, there!
+            img.dib-ns.mw3.pr4-ns.pb3.dn(src="img/wave.svg")
+            img.br-100.mw5.pt2.center.mh0-ns(src="img/levi.jpg")
+        .w-100.w-50-ns.bg-white.center.mt4.ph2.bb.b--black-10
+            p.f3-ns I’m Levi. I am a maker always working on the next great app.
+            p.f3-ns Interested in startups, programming, the environment, living simply? You have come to the right place.
+
+        mixin article(blogTitle, blogDescription, blogLink, podcastLink)
+            ul.list.pl0.center.w-100.w-50-ns
+                li.pa2
+                    b.db.f3.mb1= blogTitle
+                    span.f5.db.lh-copy.measure= blogDescription
+                    span.pr4 #[a.link.green.pointer(href=blogLink) read story]
+                    if podcastLink
+                        span #[a.link.green.pointer(href=podcastLink) listen to story]
+
+        h2.w-100.w-50-ns.bg-white.center.mt4.ph2 My latest stories.
+        +article('2016 year in review.', '2017 is the year of launching. It is going to rock!!!', '/blog/2016-year-in-review/')
+        +article('Why do we always have to scale?!', 'I want to challenge all mentors, judges, and advisors. Please ask the intention of the business owners before jumping to conclusions.')
+        +article('Biggest tip to being a better mentor', 'I used to suckkkkkkk at being a mentor. This has helped me tremendously.', "/blog/biggest-tip-be-better-mentor/")
+        +article('How to name your next product', 'Naming a product is a pain. Yet, once you find the perfect name, it somehow makes it feel all worth it!', "/blog/how-to-name-your-next-product/")
+
+        h2.bt.pt3.w-100.w-50-ns.bg-white.center.mt4.ph2 Check out all of my stories. #[a.link.green.pointer(href="http://levibostian.com/blog") read stories] or #[a.link.green.pointer(href="https://podcast.levibostian.com/") listen to podcast].
+
+        #newsletter.w-100
+            script#-clp-460(async='', src='https://withcoach.com/landing_pages/578/embed.js')
+
+        #contact.w-100.bg-white.tc.pt4
+            .tc.w-80-m.w-50-l.center.pb4
+                h1 Please, tell me what you are working on! What do you need help with?
+                a.f2-m.f4.normal.link.near-black.b.ba.pv2.ph4.br2.center.pointer.hover(href="mailto:levi@curiosityio.com") Email me
+                .center.pt3
+                    a(href="https://twitter.com/levibostian" target="_blank")
+                        img.mw2.pa1(src="img/twitter.svg")
+                    a(href="https://medium.com/@levibostian" target="_blank")
+                        img.mw2.pa1(src="img/medium.svg")
