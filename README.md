@@ -1,2 +1,2 @@
-# lifeoflevi.com
-Website for lifeoflevi.com. My blog, podcast. 
+# lifeoflevi.xyz
+Website for lifeoflevi.xyz. My blog, podcast. 
