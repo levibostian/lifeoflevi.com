@@ -14,6 +14,8 @@ html(lang='en')
             p.f3-ns I’m Levi. I am a maker always working on the next great app.
             p.f3-ns Interested in startups, programming, the environment, living simply? You have come to the right place.
 
+        p.f3-ns.tc.center Check out #[a.link.green.pointer(href="http://levibostian.com/blog/2017/") my list] of everything I have launched so far in 2017.
+
         mixin article(blogTitle, blogDescription, blogLink, podcastLink)
             ul.list.pl0.center.w-100.w-50-ns
                 li.pa2
@@ -24,10 +26,11 @@ html(lang='en')
                         span #[a.link.green.pointer(href=podcastLink) listen to story]
 
         h2.w-100.w-50-ns.bg-white.center.mt4.ph2 My latest stories.
-        +article('2016 year in review.', '2017 is the year of launching. It is going to rock!!!', '/blog/2016-year-in-review/', 'http://podcast.levibostian.com/episodes/56091-2016-year-in-review')
-        +article('Why do we always have to scale?!', 'I want to challenge all mentors, judges, and advisors. Please ask the intention of the business owners before jumping to conclusions.')
-        +article('Biggest tip to being a better mentor', 'I used to suckkkkkkk at being a mentor. This has helped me tremendously.', "/blog/biggest-tip-be-better-mentor/")
-        +article('How to name your next product', 'Naming a product is a pain. Yet, once you find the perfect name, it somehow makes it feel all worth it!', "/blog/how-to-name-your-next-product/")
+        +article('I created my first CocoaPods library!', 'Why, What, and How to create a CocoaPods library.', "http://levibostian.com/blog/create-cocoapod/")
+        +article('2016 year in review.', '2017 is the year of launching. It is going to rock!!!', 'http://levibostian.com/blog/2016-year-in-review/', 'http://podcast.levibostian.com/episodes/56091-2016-year-in-review')
+        +article('Why do we always have to scale?!', 'I want to challenge all mentors, judges, and advisors. Please ask the intention of the business owners before jumping to conclusions.', 'http://levibostian.com/blog/why-do-we-always-have-to-scale/')
+        +article('Biggest tip to being a better mentor', 'I used to suckkkkkkk at being a mentor. This has helped me tremendously.', "http://levibostian.com/blog/biggest-tip-be-better-mentor/")
+        +article('How to name your next product', 'Naming a product is a pain. Yet, once you find the perfect name, it somehow makes it feel all worth it!', "http://levibostian.com/blog/how-to-name-your-next-product/")
 
         h2.bt.pt3.w-100.w-50-ns.bg-white.center.mt4.ph2 Check out all of my stories. #[a.link.green.pointer(href="http://levibostian.com/blog") read stories] or #[a.link.green.pointer(href="https://podcast.levibostian.com/") listen to podcast].
 
