@@ -2,7 +2,7 @@ doctype html
 html(lang='en')
     head
         meta(name="viewport" content="width=device-width, initial-scale=1")
-        title Levi Bostian | Building the next great app.
+        title Life of Levi
         link(rel='stylesheet', href='https://unpkg.com/tachyons@4.6.1/css/tachyons.min.css')
         include google_analytics.pug
     body.black-70
@@ -11,8 +11,8 @@ html(lang='en')
             img.dib-ns.mw3.pr4-ns.pb3.dn(src="img/wave.svg")
             img.br-100.mw5.pt2.center.mh0-ns(src="img/levi.jpg")
         .w-100.w-50-ns.bg-white.center.mt4.ph2.bb.b--black-10
-            p.f3-ns I’m Levi. I am a maker always working on the next great app.
-            p.f3-ns Interested in startups, programming, the environment, living simply? You have come to the right place.
+            p.f3-ns I’m Levi. I build Android and iOS apps and other cool stuff.
+            p.f3-ns Interested in Startups, software development, freelancing, living simply?
 
         p.f3-ns.tc.center Check out #[a.link.green.pointer(href="http://levibostian.com/blog/2017/") my list] of everything I have launched so far in 2017.
 
@@ -26,15 +26,15 @@ html(lang='en')
                         span #[a.link.green.pointer(href=podcastLink) listen to story]
 
         h2.w-100.w-50-ns.bg-white.center.mt4.ph2 My latest stories.
+        +article("Beware of work scammers.", "Don't give into this scam as I have in the past.", "http://levibostian.com/blog/beware-work-scammers/", "http://podcast.levibostian.com/episodes/58610-beware-of-work-scammers")
+        +article("Letter to Barack and Michelle Obama.", "Dear Barack and Michelle,", "http://levibostian.com/blog/obama-letter/", "http://podcast.levibostian.com/episodes/58195-letter-to-barack-and-michelle-obama")
         +article('Constraints are a gift.', 'Constraints allow us to think and invent. Embrace them!', "http://levibostian.com/blog/constraints-are-a-gift/", 'http://podcast.levibostian.com/episodes/57686-constraints-are-a-gift')
         +article('Shame at how VC funded startups can ruin value.', 'Products exist to improve our lives. Unfortunately for VC (venture capital) backed startups, adding value to someone\'s life may come at a lower priority.', "http://levibostian.com/blog/vc-startups-ruin-value/", 'http://podcast.levibostian.com/episodes/56737-shame-at-how-vc-funded-startups-can-ruin-value')
         +article('I created my first CocoaPods library!', 'Why, What, and How to create a CocoaPods library.', "http://levibostian.com/blog/create-cocoapod/")
         +article('2016 year in review.', '2017 is the year of launching. It is going to rock!!!', 'http://levibostian.com/blog/2016-year-in-review/', 'http://podcast.levibostian.com/episodes/56091-2016-year-in-review')
         +article('Why do we always have to scale?!', 'I want to challenge all mentors, judges, and advisors. Please ask the intention of the business owners before jumping to conclusions.', 'http://levibostian.com/blog/why-do-we-always-have-to-scale/')
-        +article('Biggest tip to being a better mentor', 'I used to suckkkkkkk at being a mentor. This has helped me tremendously.', "http://levibostian.com/blog/biggest-tip-be-better-mentor/")
-        +article('How to name your next product', 'Naming a product is a pain. Yet, once you find the perfect name, it somehow makes it feel all worth it!', "http://levibostian.com/blog/how-to-name-your-next-product/")
 
-        h2.bt.pt3.w-100.w-50-ns.bg-white.center.mt4.ph2 Check out all of my stories. #[a.link.green.pointer(href="http://levibostian.com/blog") read stories] or #[a.link.green.pointer(href="https://podcast.levibostian.com/") listen to podcast].
+        h2.bt.pt3.w-100.w-50-ns.bg-white.center.mt4.ph2 #[a.link.green.pointer(href="http://levibostian.com/blog") Read all my stories] or #[a.link.green.pointer(href="https://podcast.levibostian.com/") listen to the podcast].
 
         h2.w-100.w-50-ns.bg-white.center.mt5.ph2.tc Ever thought about becoming a freelancer? Ready to take the leap and make it happen?
         p.f5.w-100.w-50-ns.bg-white.center.ph2 I am creating an online course right now on how to start your career as a freelancer. Taxes to marketing. Pricing and how to attract clients. I am sharing #[i everything] I have done to date with #[a.link.green.pointer(href="https://curiosityio.com/") my freelance business]. #[a.link.green.pointer(href="mailto:levi@curiosityio.com") Email me questions] you have about becoming a freelancer and I will answer them in the course. #[a.link.green.pointer(href="https://coaching.levibostian.com/blog-newsletter") Sign up for the newsletter] below to hear when it launches!
